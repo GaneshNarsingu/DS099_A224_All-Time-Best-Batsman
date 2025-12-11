@@ -21,3 +21,20 @@ summary(df)
 # - What each variable represents (e.g., Inns = innings, Runs = total runs)
 # - The type of data (continuous, integer)
 # - Why the dataset is suitable for the research question
+
+## 2. BASIC DESCRIPTIVE STATISTICS -------------------------
+
+# Mean, median and standard deviation for each variable
+mean_inns  <- mean(Inns, na.rm = TRUE)
+median_inns <- median(Inns, na.rm = TRUE)
+sd_inns    <- sd(Inns, na.rm = TRUE)
+
+mean_runs  <- mean(Runs, na.rm = TRUE)
+median_runs <- median(Runs, na.rm = TRUE)
+sd_runs    <- sd(Runs, na.rm = TRUE)
+
+print("Descriptive statistics for Inns:")
+mean_inns; median_inns; sd_inns
+
+print("Descriptive statistics for Runs:")
+mean_runs; median_runs; sd_runs
