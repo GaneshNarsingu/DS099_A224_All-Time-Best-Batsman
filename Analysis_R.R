@@ -105,6 +105,15 @@ cor_result_pearson <- cor.test(Inns, Runs, method = "pearson")
 print("Pearson correlation test between Inns and Runs:")
 cor_result_pearson
 
+## 7. SIMPLE PRINT-OUT SUMMARY -----------------------------
+
+cat("\n---------------- SUMMARY FOR REPORT ----------------\n")
+cat("Mean Inns:", mean_inns, "  |  Mean Runs:", mean_runs, "\n")
+cat("Spearman rho:", cor_result_spearman$estimate,
+    "  |  p-value:", cor_result_spearman$p.value, "\n")
+cat("Pearson r:", cor_result_pearson$estimate,
+    "  |  p-value:", cor_result_pearson$p.value, "\n")
+cat("----------------------------------------------------\n")
 
 
 
