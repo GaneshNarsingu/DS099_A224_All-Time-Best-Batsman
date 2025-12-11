@@ -38,3 +38,32 @@ mean_inns; median_inns; sd_inns
 
 print("Descriptive statistics for Runs:")
 mean_runs; median_runs; sd_runs
+
+## 3. HISTOGRAMS (SUPPLEMENTARY PLOTS) ---------------------
+
+# Histogram of Innings played
+hist(Inns,
+     main = "Histogram of Innings Played",
+     xlab = "Innings (Inns)",
+     ylab = "Frequency")
+
+# Histogram of Total Runs
+hist(Runs,
+     main = "Histogram of Total Runs Scored",
+     xlab = "Total Runs",
+     ylab = "Frequency")
+
+## 4. SCATTERPLOT (MAIN VISUALISATION) ---------------------
+
+# Basic scatterplot of Inns vs Runs
+plot(Inns, Runs,
+     main = "Scatterplot of Innings vs Total Runs (IPL batsmen)",
+     xlab = "Innings played (Inns)",
+     ylab = "Total runs scored (Runs)")
+
+# Add a simple regression line (helps to see the trend)
+model <- lm(Runs ~ Inns)
+abline(model, col = "red", lwd = 2)
+
+
+
