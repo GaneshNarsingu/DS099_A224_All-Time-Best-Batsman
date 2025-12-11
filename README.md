@@ -19,3 +19,7 @@ provides summary statistics
 This information was used to describe the dataset clearly in the report and to justify our research question:
 
 “Is there a statistically significant correlation between the number of innings played and the total runs scored by IPL batsmen?”
+
+### Khais – Descriptive statistics for Inns and Runs
+
+I added a small section of code that calculates the mean, median and standard deviation for both `Inns` and `Runs`. This gives us a quick summary of the central values and spread in the data, and it backs up the background and visualisation sections with actual numbers, not just plots.
