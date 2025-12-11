@@ -21,8 +21,3 @@ summary(df)
 # - What each variable represents (e.g., Inns = innings, Runs = total runs)
 # - The type of data (continuous, integer)
 # - Why the dataset is suitable for the research question
-
-# Your report tasks:
-# - Write introduction (why analyse IPL batting stats)
-# - Write dataset description (rows, columns, meaning)
-# - Write RQ and hypotheses
