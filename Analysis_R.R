@@ -38,4 +38,3 @@ mean_inns; median_inns; sd_inns
 
 print("Descriptive statistics for Runs:")
 mean_runs; median_runs; sd_runs
-
