@@ -1,7 +1,7 @@
 # DS099_A224_All-Time-Best-Batsman
 7COM1079-0901-2025 - Team Research and Development Project
 
-Project Overview (Eshan’s Contribution)
+Project Overview (Ehsan Contribution)
 
 This repository contains our group project for the module 7COM1079 – Team Research and Development.
 My contribution focuses on the Introduction, Dataset description, and the Research Question.
@@ -42,5 +42,9 @@ I added the part of the script that actually tests our research question. First,
 Then I used `cor.test()` to calculate both Spearman and Pearson correlations between `Inns` and `Runs`. In the report we use Spearman as our main result, and keep Pearson as a comparison to show that the conclusion (strong positive relationship) is robust. This code is the main link between the RQ, the hypothesis test and the numbers we report in the Analysis section.
 
 **I set `exact = FALSE` in the Spearman cor.test call because our data contain ties (players with the same Inns or Runs values). R uses a large-sample approximation for the p-value, which is appropriate given our sample size (n = 135).
+
+### Improvements to visualisation
+
+I updated the histogram code for `Inns` and `Runs` to use a density scale and added a normal curve overlay. This makes it easier to see how skewed the data are compared to a bell-shaped distribution, which directly supports our decision to use Spearman correlation in the analysis. I also checked that all plots have clear titles and axis labels so they match the visualisation criteria in the marking rubric.
 
 
