@@ -115,5 +115,16 @@ cat("Pearson r:", cor_result_pearson$estimate,
     "  |  p-value:", cor_result_pearson$p.value, "\n")
 cat("----------------------------------------------------\n")
 
+hist(Inns,
+     main = "Histogram of Innings Played",
+     xlab = "Innings (Inns)",
+     ylab = "Density",
+     freq = FALSE)
+
+x_vals <- seq(min(Inns), max(Inns), length.out = 100)
+lines(x_vals,
+      dnorm(x_vals, mean = mean(Inns), sd = sd(Inns)),
+      lwd = 2)
+
 
 
